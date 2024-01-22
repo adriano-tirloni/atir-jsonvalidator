@@ -1,4 +1,4 @@
-import { compileSchema, getValidator, createValidator } from "../src/jsonValidator.js";
+import { compileSchema, getValidator, createValidator, i18n  } from "../src/index.js";
 
 let validator = compileSchema({
   $id: "teste4",
