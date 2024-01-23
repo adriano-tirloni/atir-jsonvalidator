@@ -1,4 +1,5 @@
-import { compileSchema, getValidator, createValidator, i18n  } from "../src/index.js";
+import { i18n, compileSchema, createValidator } from "../dist/esm/index.mjs";
+console.log(i18n)
 
 let validator = compileSchema({
   $id: "teste4",

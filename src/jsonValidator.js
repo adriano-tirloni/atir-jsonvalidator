@@ -1,6 +1,6 @@
-import { createRequire } from "module";
-const require = createRequire(import.meta.url);
-const Ajv = require("ajv")
+// const Ajv = require("ajv")
+
+import Ajv from "ajv";
 
 const ajv = new Ajv({
   code: {esm: true}, 
