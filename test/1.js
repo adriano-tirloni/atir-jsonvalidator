@@ -1,4 +1,4 @@
-import { i18n, compileSchema, createValidator } from "../dist/esm/index.mjs";
+import { compileSchema, createValidator, getValidator, i18n } from "../dist/esm/index.js";
 console.log(i18n)
 
 let validator = compileSchema({

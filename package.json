@@ -1,23 +1,20 @@
 {
   "name": "atir-jsonvalidator",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "Private wrapper over ajv",
   "author": "Adriano Tirloni",
   "license": "MIT",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/adriano-tirloni/atir-jsonvalidator.git"
   },
   "homepage": "https://github.com/adriano-tirloni/atir-jsonvalidator",
-  "//comment// main & module": "main and module keys are present for backwards compaibility, read on : https://nodejs.org/api/packages.html#dual-commonjses-module-packages",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
   "exports": {
-    "require": "./dist/cjs/index.js",
     "import": "./dist/esm/index.js"
   },
   "scripts": {
-    "build": "rollup -c && bash ./postbuild"
+    "build": "rollup -c"
   },
   "dependencies": {
     "ajv": "8.12.0"

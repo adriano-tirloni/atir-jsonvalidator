@@ -1,4 +1,4 @@
-// atir-jsonvalidator v1.0.4 Copyright (c) 2024 Adriano Tirloni
+// atir-jsonvalidator v1.0.6 Copyright (c) 2024 Adriano Tirloni
 var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
 
 function getDefaultExportFromCjs (x) {

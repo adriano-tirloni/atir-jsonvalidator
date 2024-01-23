@@ -20,20 +20,22 @@ if (fs.existsSync('./dist') && fs.readdirSync('./dist').length) {
   fs.rmSync('./dist', { recursive: true, force: true })
 }
 
-export default [
-  {
-    input: './src/index.js',
-    output: {
-      file: `./dist/esm/index.mjs`,
-      format: 'esm',
-      exports: 'auto',
-      preferConst: true,
-      banner,
-    },
-    plugins: [
-      json(),
-      nodeResolve(),
-      commonjs(),
-    ],
+const defaultConfig =   {
+  input: './src/index.js',
+  output: {
+    file: `./dist/esm/index.js`,
+    format: 'esm',
+    exports: 'auto',
+    preferConst: true,
+    banner,
   },
+  plugins: [
+    json(),
+    nodeResolve(),
+    commonjs(),
+  ],
+}
+
+export default [
+  defaultConfig
 ]
