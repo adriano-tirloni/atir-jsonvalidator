@@ -1,6 +1,6 @@
 {
   "name": "atir-jsonvalidator",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Private wrapper over ajv",
   "author": "Adriano Tirloni",
   "license": "MIT",
@@ -11,24 +11,11 @@
   },
   "homepage": "https://github.com/adriano-tirloni/atir-jsonvalidator",
   "exports": {
-    "import": "./dist/esm/index.js"
+    "import": "./src/index.js"
   },
-  "scripts": {
-    "build": "rollup -c"
-  },
+  "scripts": {},
   "dependencies": {
     "ajv": "8.12.0"
   },
-  "devDependencies": {
-    "@rollup/plugin-commonjs": "^25.0.7",
-    "@rollup/plugin-json": "^6.1.0",
-    "@rollup/plugin-node-resolve": "^15.2.3",
-    "@rollup/plugin-terser": "^0.4.4",
-    "rollup": "^2.77.0",
-    "rollup-plugin-terser": "^7.0.2"
-  },
-  "files": [
-    "dist/"
-  ],
   "engines": {}
 }
