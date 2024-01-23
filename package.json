@@ -7,7 +7,7 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/adriano-tirloni/atir-jsonvalidator.git"
+    "url": "git+https://github.com/adriano-tirloni/atir-jsonvalidator.git"
   },
   "homepage": "https://github.com/adriano-tirloni/atir-jsonvalidator",
   "exports": {
