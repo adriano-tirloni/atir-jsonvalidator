@@ -1,6 +1,7 @@
 // const Ajv = require("ajv")
 
 import Ajv from "ajv";
+import addFormats from "ajv-formats";
 
 const ajv = new Ajv({
   code: {esm: true}, 
@@ -11,6 +12,8 @@ const ajv = new Ajv({
   allErrors: true, 
   verbose: true 
 })
+addFormats(ajv)
+
 
 function parseErrors(errors, localizeErrorFn) {
   if (!(errors && errors.length)) return {}
