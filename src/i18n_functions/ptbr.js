@@ -1,5 +1,7 @@
 
 export function ptbr(error){
+  if (typeof error === 'string') return {message: error}
+  
   let out
   switch (error.keyword) {
     case "additionalItems":
